@@ -172,7 +172,18 @@ ModelImporter:
     4300064: chaos_star1
     4300066: chaos_star2
     4300068: chaosMarine_geo85
-    7400000: Take 001
+    7400000: idleChaos
+    7400002: runChaos
+    7400004: deathChaos
+    7400006: shootChaos
+    7400008: melee01Chaos
+    7400010: backwardsRunChaos
+    7400012: strafeLeftChaos
+    7400014: strafeRightChaos
+    7400016: meleeCombo2Chaos
+    7400018: meleeCombo3Chaos
+    7400020: meleeCombo4Chaos
+    7400022: hit01Chaos
     9500000: //RootNode
     13700000: chaos_backpack
     13700002: chaos_boltPistol_Low_MeshPart0
@@ -210,7 +221,7 @@ ModelImporter:
     13700066: chaosMarine_sword
     13700068: polySurface46
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
@@ -225,13 +236,1933 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idleChaos
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chaosMarine_back_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball/chaosMarine_left_toe
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist/chaosMarine_left_control_left_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck/chaosMarine_crown
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist/chaosMarine_right_control_right_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis1
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball/chaosMarine_right_toe
+        weight: 1
+      - path: ChaosMarine_GEO
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_backpack
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart0
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star2
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_chest
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo5
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo6
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo7
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo8
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo62
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo63
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo64
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo65
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo66
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo67
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo68
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo69
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo70
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo75
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo78
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo79
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo81
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo82
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo83
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo84
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo85
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo88
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo89
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo90
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo91
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo92
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo93
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_sword
+        weight: 1
+      - path: ChaosMarine_GEO/polySurface46
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: runChaos
+      takeName: Take 001
+      firstFrame: 40
+      lastFrame: 63
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chaosMarine_back_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball/chaosMarine_left_toe
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist/chaosMarine_left_control_left_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck/chaosMarine_crown
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist/chaosMarine_right_control_right_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis1
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball/chaosMarine_right_toe
+        weight: 1
+      - path: ChaosMarine_GEO
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_backpack
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart0
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star2
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_chest
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo5
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo6
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo7
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo8
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo62
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo63
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo64
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo65
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo66
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo67
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo68
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo69
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo70
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo75
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo78
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo79
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo81
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo82
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo83
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo84
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo85
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo88
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo89
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo90
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo91
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo92
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo93
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_sword
+        weight: 1
+      - path: ChaosMarine_GEO/polySurface46
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: deathChaos
+      takeName: Take 001
+      firstFrame: 70
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chaosMarine_back_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball/chaosMarine_left_toe
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist/chaosMarine_left_control_left_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck/chaosMarine_crown
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist/chaosMarine_right_control_right_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis1
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball/chaosMarine_right_toe
+        weight: 1
+      - path: ChaosMarine_GEO
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_backpack
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart0
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star2
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_chest
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo5
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo6
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo7
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo8
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo62
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo63
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo64
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo65
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo66
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo67
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo68
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo69
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo70
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo75
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo78
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo79
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo81
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo82
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo83
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo84
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo85
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo88
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo89
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo90
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo91
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo92
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo93
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_sword
+        weight: 1
+      - path: ChaosMarine_GEO/polySurface46
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: shootChaos
+      takeName: Take 001
+      firstFrame: 130
+      lastFrame: 141
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chaosMarine_back_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball/chaosMarine_left_toe
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist/chaosMarine_left_control_left_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck/chaosMarine_crown
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist/chaosMarine_right_control_right_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis1
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball/chaosMarine_right_toe
+        weight: 1
+      - path: ChaosMarine_GEO
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_backpack
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart0
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star2
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_chest
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo5
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo6
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo7
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo8
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo62
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo63
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo64
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo65
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo66
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo67
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo68
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo69
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo70
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo75
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo78
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo79
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo81
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo82
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo83
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo84
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo85
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo88
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo89
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo90
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo91
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo92
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo93
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_sword
+        weight: 1
+      - path: ChaosMarine_GEO/polySurface46
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: melee01Chaos
+      takeName: Take 001
+      firstFrame: 150
+      lastFrame: 173
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chaosMarine_back_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball/chaosMarine_left_toe
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist/chaosMarine_left_control_left_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck/chaosMarine_crown
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist/chaosMarine_right_control_right_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis1
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball/chaosMarine_right_toe
+        weight: 1
+      - path: ChaosMarine_GEO
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_backpack
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart0
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star2
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_chest
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo5
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo6
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo7
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo8
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo62
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo63
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo64
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo65
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo66
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo67
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo68
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo69
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo70
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo75
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo78
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo79
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo81
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo82
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo83
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo84
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo85
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo88
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo89
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo90
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo91
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo92
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo93
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_sword
+        weight: 1
+      - path: ChaosMarine_GEO/polySurface46
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: backwardsRunChaos
+      takeName: Take 001
+      firstFrame: 180
+      lastFrame: 203
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chaosMarine_back_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball/chaosMarine_left_toe
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist/chaosMarine_left_control_left_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck/chaosMarine_crown
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist/chaosMarine_right_control_right_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis1
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball/chaosMarine_right_toe
+        weight: 1
+      - path: ChaosMarine_GEO
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_backpack
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart0
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star2
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_chest
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo5
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo6
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo7
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo8
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo62
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo63
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo64
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo65
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo66
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo67
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo68
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo69
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo70
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo75
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo78
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo79
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo81
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo82
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo83
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo84
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo85
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo88
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo89
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo90
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo91
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo92
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo93
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_sword
+        weight: 1
+      - path: ChaosMarine_GEO/polySurface46
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: strafeLeftChaos
+      takeName: Take 001
+      firstFrame: 210
+      lastFrame: 233
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chaosMarine_back_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball/chaosMarine_left_toe
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist/chaosMarine_left_control_left_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck/chaosMarine_crown
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist/chaosMarine_right_control_right_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis1
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball/chaosMarine_right_toe
+        weight: 1
+      - path: ChaosMarine_GEO
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_backpack
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart0
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star2
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_chest
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo5
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo6
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo7
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo8
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo62
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo63
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo64
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo65
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo66
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo67
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo68
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo69
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo70
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo75
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo78
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo79
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo81
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo82
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo83
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo84
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo85
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo88
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo89
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo90
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo91
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo92
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo93
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_sword
+        weight: 1
+      - path: ChaosMarine_GEO/polySurface46
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: strafeRightChaos
+      takeName: Take 001
+      firstFrame: 240
+      lastFrame: 263
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chaosMarine_back_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball/chaosMarine_left_toe
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist/chaosMarine_left_control_left_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck/chaosMarine_crown
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist/chaosMarine_right_control_right_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis1
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball/chaosMarine_right_toe
+        weight: 1
+      - path: ChaosMarine_GEO
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_backpack
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart0
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star2
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_chest
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo5
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo6
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo7
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo8
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo62
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo63
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo64
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo65
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo66
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo67
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo68
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo69
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo70
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo75
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo78
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo79
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo81
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo82
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo83
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo84
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo85
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo88
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo89
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo90
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo91
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo92
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo93
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_sword
+        weight: 1
+      - path: ChaosMarine_GEO/polySurface46
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: meleeCombo2Chaos
+      takeName: Take 001
+      firstFrame: 270
+      lastFrame: 293
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chaosMarine_back_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball/chaosMarine_left_toe
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist/chaosMarine_left_control_left_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck/chaosMarine_crown
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist/chaosMarine_right_control_right_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis1
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball/chaosMarine_right_toe
+        weight: 1
+      - path: ChaosMarine_GEO
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_backpack
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart0
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star2
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_chest
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo5
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo6
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo7
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo8
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo62
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo63
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo64
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo65
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo66
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo67
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo68
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo69
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo70
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo75
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo78
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo79
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo81
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo82
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo83
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo84
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo85
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo88
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo89
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo90
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo91
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo92
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo93
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_sword
+        weight: 1
+      - path: ChaosMarine_GEO/polySurface46
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: meleeCombo3Chaos
+      takeName: Take 001
+      firstFrame: 300
+      lastFrame: 323
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chaosMarine_back_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball/chaosMarine_left_toe
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist/chaosMarine_left_control_left_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck/chaosMarine_crown
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist/chaosMarine_right_control_right_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis1
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball/chaosMarine_right_toe
+        weight: 1
+      - path: ChaosMarine_GEO
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_backpack
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart0
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star2
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_chest
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo5
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo6
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo7
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo8
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo62
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo63
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo64
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo65
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo66
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo67
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo68
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo69
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo70
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo75
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo78
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo79
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo81
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo82
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo83
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo84
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo85
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo88
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo89
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo90
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo91
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo92
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo93
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_sword
+        weight: 1
+      - path: ChaosMarine_GEO/polySurface46
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: meleeCombo4Chaos
+      takeName: Take 001
+      firstFrame: 330
+      lastFrame: 353
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chaosMarine_back_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball/chaosMarine_left_toe
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist/chaosMarine_left_control_left_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck/chaosMarine_crown
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist/chaosMarine_right_control_right_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis1
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball/chaosMarine_right_toe
+        weight: 1
+      - path: ChaosMarine_GEO
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_backpack
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart0
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star2
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_chest
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo5
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo6
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo7
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo8
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo62
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo63
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo64
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo65
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo66
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo67
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo68
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo69
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo70
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo75
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo78
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo79
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo81
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo82
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo83
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo84
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo85
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo88
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo89
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo90
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo91
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo92
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo93
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_sword
+        weight: 1
+      - path: ChaosMarine_GEO/polySurface46
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: hit01Chaos
+      takeName: Take 001
+      firstFrame: 70
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chaosMarine_back_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_left_hip/chaosMarine_left_knee/chaosMarine_left_ankle/chaosMarine_left_ball/chaosMarine_left_toe
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_left_arm_root/chaosMarine_left_control_left_shoulder2/chaosMarine_left_control_left_elbow/chaosMarine_left_control_wrist/chaosMarine_left_control_left_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_neck/chaosMarine_crown
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis/chaosMarine_lower_back/chaosMarine_mid_bac/chaosMarine_upper_back/chaosMarine_right_arm_root/chaosMarine_right_control_right_shoulder2/chaosMarine_right_control_right_elbow/chaosMarine_right_control_wrist/chaosMarine_right_control_right_hand
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_pelvis1
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball
+        weight: 1
+      - path: chaosMarine_back_root/chaosMarine_right_hip/chaosMarine_right_knee/chaosMarine_right_ankle/chaosMarine_right_ball/chaosMarine_right_toe
+        weight: 1
+      - path: ChaosMarine_GEO
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_backpack
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart0
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_boltPistol_Low/chaos_boltPistol_Low_MeshPart1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star1
+        weight: 1
+      - path: ChaosMarine_GEO/chaos_star2
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_chest
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo5
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo6
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo7
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo8
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo62
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo63
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo64
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo65
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo66
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo67
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo68
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo69
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo70
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo75
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo78
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo79
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo81
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo82
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo83
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo84
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo85
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo88
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo89
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo90
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo91
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo92
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_geo93
+        weight: 1
+      - path: ChaosMarine_GEO/chaosMarine_sword
+        weight: 1
+      - path: ChaosMarine_GEO/polySurface46
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
