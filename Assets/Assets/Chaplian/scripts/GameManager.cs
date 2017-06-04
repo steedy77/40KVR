@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour
+{
 
 
     public GameObject EnemyPrefab;
@@ -46,12 +47,14 @@ public class GameManager : MonoBehaviour {
     {
         int ranValue = Random.Range(spawnRateMin, spawnRateMax + 1);
 
-        for(int i =0; i < ranValue; i++)
+        for (int i = 0; i < ranValue; i++)
         {
             int ranSpawn = Random.Range(0, spawnPositions.Length);
             GameObject go = Instantiate(EnemyPrefab, spawnPositions[ranSpawn].position, Quaternion.identity) as GameObject;
             enemiesSpawned.Add(go.transform);
         }
     }
-}
+}            
+
+
 
