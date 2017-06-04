@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class CharacterStats : MonoBehaviour {
+public class CharacterStatsEnemy : MonoBehaviour {
 
     public float health = 100;
     bool dealDamage;
@@ -13,14 +13,13 @@ public class CharacterStats : MonoBehaviour {
     WaitForSeconds damageT;
 
     Animator anim;
-    GameManager gm;
 
     public GameObject sliderPrefab;
 
     Slider healthSlider;
     RectTransform healthTrans;
 
-    void Start()
+    void Start ()
     {
         damageT = new WaitForSeconds(damageTimer);
         anim = GetComponent<Animator>();
@@ -29,10 +28,7 @@ public class CharacterStats : MonoBehaviour {
         slid.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform);
         healthSlider = slid.GetComponentInChildren<Slider>();
         healthTrans = slid.GetComponent<RectTransform>();
-   
-        gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
-        }
-    
+    }
     
     void Update()
     {
@@ -58,7 +54,7 @@ public class CharacterStats : MonoBehaviour {
             if (!dead)
             {
                 anim.SetBool("dead", true);
-                anim.CrossFade("death", 0.5f);
+                anim.CrossFade("deathChaos", 0.5f);
                 healthTrans.gameObject.SetActive(false);
                 dealDamage = true;
 
