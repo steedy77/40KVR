@@ -174,7 +174,7 @@ ModelImporter:
     4300068: chaosMarine_geo85
     7400000: idleChaos
     7400002: runChaos
-    7400004: deathChaos
+    7400004: death
     7400006: shootChaos
     7400008: melee01Chaos
     7400010: backwardsRunChaos
@@ -564,7 +564,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: deathChaos
+      name: death
       takeName: Take 001
       firstFrame: 70
       lastFrame: 120
