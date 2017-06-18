@@ -71,6 +71,41 @@ ModelImporter:
     100126: chaosMarine_sword
     100128: chaosMarine_upper_back
     100130: polySurface46
+    100132: chaos_boltPistol
+    100134: chaos_boltPistol_MeshPart0
+    100136: chaos_boltPistol_MeshPart1
+    100138: chaos_Horns
+    100140: chaos_Weapon
+    100142: chaosChest
+    100144: chaosGeo_100
+    100146: chaosGeo_102
+    100148: chaosGeo_103
+    100150: chaosGeo_104
+    100152: chaosGeo_105
+    100154: chaosGeo_106
+    100156: chaosGeo_65
+    100158: chaosGeo_66
+    100160: chaosGeo_67
+    100162: chaosGeo_68
+    100164: chaosGeo_69
+    100166: chaosGeo_74
+    100168: chaosGeo_75
+    100170: chaosGeo_76
+    100172: chaosGeo_77
+    100174: chaosGeo_78
+    100176: chaosGeo_79
+    100178: chaosGeo_80
+    100180: chaosGeo_84
+    100182: chaosGeo_85
+    100184: chaosGeo_86
+    100186: chaosGeo_90
+    100188: chaosGeo_91
+    100190: chaosGeo_94
+    100192: chaosGeo_95
+    100194: chaosGeo_96
+    100196: chaosGeo_98
+    100198: chaosHead
+    100200: Chaplian_GEO
     400000: chaos_backpack
     400002: chaos_boltPistol_Low
     400004: chaos_boltPistol_Low_MeshPart0
@@ -137,6 +172,43 @@ ModelImporter:
     400126: chaosMarine_sword
     400128: chaosMarine_upper_back
     400130: polySurface46
+    400132: chaos_boltPistol
+    400134: chaos_boltPistol_MeshPart0
+    400136: chaos_boltPistol_MeshPart1
+    400138: chaos_Horns
+    400140: chaos_Weapon
+    400142: chaosChest
+    400144: chaosGeo_100
+    400146: chaosGeo_102
+    400148: chaosGeo_103
+    400150: chaosGeo_104
+    400152: chaosGeo_105
+    400154: chaosGeo_106
+    400156: chaosGeo_65
+    400158: chaosGeo_66
+    400160: chaosGeo_67
+    400162: chaosGeo_68
+    400164: chaosGeo_69
+    400166: chaosGeo_74
+    400168: chaosGeo_75
+    400170: chaosGeo_76
+    400172: chaosGeo_77
+    400174: chaosGeo_78
+    400176: chaosGeo_79
+    400178: chaosGeo_80
+    400180: chaosGeo_84
+    400182: chaosGeo_85
+    400184: chaosGeo_86
+    400186: chaosGeo_90
+    400188: chaosGeo_91
+    400190: chaosGeo_94
+    400192: chaosGeo_95
+    400194: chaosGeo_96
+    400196: chaosGeo_98
+    400198: chaosHead
+    400200: Chaplian_GEO
+    2300000: chaosGeo_69
+    3300000: chaosGeo_69
     4300000: chaosMarine_geo5
     4300002: chaosMarine_geo6
     4300004: chaosMarine_geo7
@@ -172,6 +244,39 @@ ModelImporter:
     4300064: chaos_star1
     4300066: chaos_star2
     4300068: chaosMarine_geo85
+    4300070: chaos_boltPistol_MeshPart0
+    4300072: chaos_boltPistol_MeshPart1
+    4300074: chaos_Weapon
+    4300076: chaos_Horns
+    4300078: chaosGeo_65
+    4300080: chaosGeo_66
+    4300082: chaosGeo_67
+    4300084: chaosGeo_68
+    4300086: chaosGeo_69
+    4300088: chaosGeo_74
+    4300090: chaosGeo_75
+    4300092: chaosGeo_76
+    4300094: chaosGeo_77
+    4300096: chaosGeo_78
+    4300098: chaosGeo_79
+    4300100: chaosGeo_80
+    4300102: chaosGeo_84
+    4300104: chaosGeo_85
+    4300106: chaosGeo_86
+    4300108: chaosGeo_90
+    4300110: chaosGeo_91
+    4300112: chaosGeo_94
+    4300114: chaosGeo_95
+    4300116: chaosGeo_96
+    4300118: chaosGeo_98
+    4300120: chaosGeo_100
+    4300122: chaosChest
+    4300124: chaosHead
+    4300126: chaosGeo_102
+    4300128: chaosGeo_103
+    4300130: chaosGeo_104
+    4300132: chaosGeo_105
+    4300134: chaosGeo_106
     7400000: idleChaos
     7400002: runChaos
     7400004: death
@@ -220,6 +325,38 @@ ModelImporter:
     13700064: chaosMarine_geo93
     13700066: chaosMarine_sword
     13700068: polySurface46
+    13700070: chaos_boltPistol_MeshPart0
+    13700072: chaos_boltPistol_MeshPart1
+    13700074: chaos_Horns
+    13700076: chaos_Weapon
+    13700078: chaosChest
+    13700080: chaosGeo_100
+    13700082: chaosGeo_102
+    13700084: chaosGeo_103
+    13700086: chaosGeo_104
+    13700088: chaosGeo_105
+    13700090: chaosGeo_106
+    13700092: chaosGeo_65
+    13700094: chaosGeo_66
+    13700096: chaosGeo_67
+    13700098: chaosGeo_68
+    13700100: chaosGeo_74
+    13700102: chaosGeo_75
+    13700104: chaosGeo_76
+    13700106: chaosGeo_77
+    13700108: chaosGeo_78
+    13700110: chaosGeo_79
+    13700112: chaosGeo_80
+    13700114: chaosGeo_84
+    13700116: chaosGeo_85
+    13700118: chaosGeo_86
+    13700120: chaosGeo_90
+    13700122: chaosGeo_91
+    13700124: chaosGeo_94
+    13700126: chaosGeo_95
+    13700128: chaosGeo_96
+    13700130: chaosGeo_98
+    13700132: chaosHead
   materials:
     importMaterials: 0
     materialName: 0
@@ -2167,7 +2304,7 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 3
+    meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0

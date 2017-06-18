@@ -75,7 +75,7 @@ public class CharacterStats : MonoBehaviour {
                 {
                     GetComponent<PlayerInput>().enabled = false;
                     GetComponent<PlayerMovement>().enabled = false;
-                    GetComponent<PlayerAttack>().enabled = false;
+                    GetComponent<PlayerAttackV2>().enabled = false;
                 }
 
                 dead = true;
