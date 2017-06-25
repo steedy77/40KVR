@@ -62,14 +62,21 @@ public class PlayerAttackV2 : MonoBehaviour {
     public void OpenDamageCollider()
     {
         damageCollider.SetActive(true);
-        damageCollider2.SetActive(true);
     }
 
     public void CloseDamageCollider()
     {
         damageCollider.SetActive(false);
-        damageCollider2.SetActive(false);
     }
 
+    public void OpenDamageCollider2()
+    {
+        damageCollider2.SetActive(true);
+    }
+
+    public void CloseDamageCollider2()
+    {
+        damageCollider2.SetActive(false);
+    }
 }
 
