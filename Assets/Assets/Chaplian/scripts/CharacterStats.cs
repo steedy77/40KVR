@@ -45,7 +45,7 @@ public class CharacterStats : MonoBehaviour {
         {
             if(!substractOnce)
             {
-                health -= 30;
+                health -= 10;
                 anim.SetTrigger("Hit");
                 substractOnce = true;
             }
@@ -75,7 +75,7 @@ public class CharacterStats : MonoBehaviour {
                 {
                     GetComponent<PlayerInput>().enabled = false;
                     GetComponent<PlayerMovement>().enabled = false;
-                    GetComponent<PlayerAttackV2>().enabled = false;
+                    GetComponent<PlayerAttackV3>().enabled = false;
                 }
 
                 dead = true;
