@@ -65,9 +65,9 @@ public class CharacterStats : MonoBehaviour {
                 GetComponent<CapsuleCollider>().enabled = false;
                 GetComponent<Rigidbody>().isKinematic = true;
 
-                if(GetComponent<EnemyAI>())
+                if(GetComponent<EnemyMovementV002>())
                 {
-                    GetComponent<EnemyAI>().enabled = false;
+                    GetComponent<EnemyMovementV002>().enabled = false;
                     GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
 
                 }
