@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 81841693547501049b26d33d7a499247
-timeCreated: 1493541236
+timeCreated: 1498956049
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -69,6 +69,9 @@ ModelImporter:
     100122: right_knee
     100124: right_toe
     100126: upper_back
+    100128: crozius
+    100130: rootRotation
+    100132: crozius18:crozius
     400000: back_root
     400002: boltPistol_Low
     400004: boltPistol_Low_MeshPart0
@@ -133,6 +136,9 @@ ModelImporter:
     400122: right_knee
     400124: right_toe
     400126: upper_back
+    400128: crozius
+    400130: rootRotation
+    400132: crozius18:crozius
     4300000: chaplain_geo5
     4300002: chaplain_geo6
     4300004: chaplain_geo7
@@ -166,6 +172,8 @@ ModelImporter:
     4300060: chaplain_geo85
     4300062: chaplain_geo9
     4300064: chaplain_geo1
+    4300066: crozius
+    4300068: crozius18:crozius
     7400000: Idle
     7400002: run
     7400004: death
@@ -178,6 +186,12 @@ ModelImporter:
     7400018: meleeCombo2
     7400020: meleeCombo3
     7400022: meleeCombo4
+    7400024: meleeCombo6
+    7400026: meleeCombo5
+    7400028: meleeCombo7
+    7400030: meleeCombo8
+    7400032: leftRun
+    7400034: rightRun
     9500000: //RootNode
     13700000: boltPistol_Low_MeshPart0
     13700002: boltPistol_Low_MeshPart1
@@ -212,6 +226,8 @@ ModelImporter:
     13700060: chaplain_geo92
     13700062: chaplain_geo93
     13700064: crozius:crozius
+    13700066: crozius
+    13700068: crozius18:crozius
   materials:
     importMaterials: 0
     materialName: 0
@@ -706,8 +722,8 @@ ModelImporter:
     - serializedVersion: 16
       name: shoot01
       takeName: Take 001
-      firstFrame: 130
-      lastFrame: 141
+      firstFrame: 540
+      lastFrame: 815
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -715,7 +731,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 1
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -731,17 +747,17 @@ ModelImporter:
       - path: 
         weight: 1
       - path: back_root
-        weight: 1
+        weight: 0
       - path: back_root/left_hip
-        weight: 1
+        weight: 0
       - path: back_root/left_hip/left_knee
-        weight: 1
+        weight: 0
       - path: back_root/left_hip/left_knee/left_ankle
-        weight: 1
+        weight: 0
       - path: back_root/left_hip/left_knee/left_ankle/left_ball
-        weight: 1
+        weight: 0
       - path: back_root/left_hip/left_knee/left_ankle/left_ball/left_toe
-        weight: 1
+        weight: 0
       - path: back_root/pelvis
         weight: 1
       - path: back_root/pelvis/lower_back
@@ -777,15 +793,15 @@ ModelImporter:
       - path: back_root/pelvis1
         weight: 1
       - path: back_root/right_hip
-        weight: 1
+        weight: 0
       - path: back_root/right_hip/right_knee
-        weight: 1
+        weight: 0
       - path: back_root/right_hip/right_knee/right_ankle
-        weight: 1
+        weight: 0
       - path: back_root/right_hip/right_knee/right_ankle/right_ball
-        weight: 1
+        weight: 0
       - path: back_root/right_hip/right_knee/right_ankle/right_ball/right_toe
-        weight: 1
+        weight: 0
       - path: Chaplian_GEO
         weight: 1
       - path: Chaplian_GEO/boltPistol_Low
@@ -1964,6 +1980,942 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: back_root
+        weight: 1
+      - path: back_root/left_hip
+        weight: 1
+      - path: back_root/left_hip/left_knee
+        weight: 1
+      - path: back_root/left_hip/left_knee/left_ankle
+        weight: 1
+      - path: back_root/left_hip/left_knee/left_ankle/left_ball
+        weight: 1
+      - path: back_root/left_hip/left_knee/left_ankle/left_ball/left_toe
+        weight: 1
+      - path: back_root/pelvis
+        weight: 1
+      - path: back_root/pelvis/lower_back
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2/left_control_left_elbow
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2/left_control_left_elbow/left_control_wrist
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2/left_control_left_elbow/left_control_wrist/left_control_left_hand
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/neck
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/neck/crown
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2/right_control_right_elbow
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2/right_control_right_elbow/right_control_wrist
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2/right_control_right_elbow/right_control_wrist/right_control_right_hand
+        weight: 1
+      - path: back_root/pelvis1
+        weight: 1
+      - path: back_root/right_hip
+        weight: 1
+      - path: back_root/right_hip/right_knee
+        weight: 1
+      - path: back_root/right_hip/right_knee/right_ankle
+        weight: 1
+      - path: back_root/right_hip/right_knee/right_ankle/right_ball
+        weight: 1
+      - path: back_root/right_hip/right_knee/right_ankle/right_ball/right_toe
+        weight: 1
+      - path: Chaplian_GEO
+        weight: 1
+      - path: Chaplian_GEO/boltPistol_Low
+        weight: 1
+      - path: Chaplian_GEO/boltPistol_Low/boltPistol_Low_MeshPart0
+        weight: 1
+      - path: Chaplian_GEO/boltPistol_Low/boltPistol_Low_MeshPart1
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo1
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo5
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo6
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo7
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo8
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo9
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo56
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo62
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo63
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo64
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo65
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo66
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo67
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo68
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo69
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo70
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo75
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo78
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo79
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo81
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo82
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo83
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo84
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo85
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo88
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo89
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo90
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo91
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo92
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo93
+        weight: 1
+      - path: Chaplian_GEO/crozius:crozius
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: meleeCombo5
+      takeName: Take 001
+      firstFrame: 360
+      lastFrame: 382
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: back_root
+        weight: 1
+      - path: back_root/left_hip
+        weight: 1
+      - path: back_root/left_hip/left_knee
+        weight: 1
+      - path: back_root/left_hip/left_knee/left_ankle
+        weight: 1
+      - path: back_root/left_hip/left_knee/left_ankle/left_ball
+        weight: 1
+      - path: back_root/left_hip/left_knee/left_ankle/left_ball/left_toe
+        weight: 1
+      - path: back_root/pelvis
+        weight: 1
+      - path: back_root/pelvis/lower_back
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2/left_control_left_elbow
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2/left_control_left_elbow/left_control_wrist
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2/left_control_left_elbow/left_control_wrist/left_control_left_hand
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/neck
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/neck/crown
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2/right_control_right_elbow
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2/right_control_right_elbow/right_control_wrist
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2/right_control_right_elbow/right_control_wrist/right_control_right_hand
+        weight: 1
+      - path: back_root/pelvis1
+        weight: 1
+      - path: back_root/right_hip
+        weight: 1
+      - path: back_root/right_hip/right_knee
+        weight: 1
+      - path: back_root/right_hip/right_knee/right_ankle
+        weight: 1
+      - path: back_root/right_hip/right_knee/right_ankle/right_ball
+        weight: 1
+      - path: back_root/right_hip/right_knee/right_ankle/right_ball/right_toe
+        weight: 1
+      - path: Chaplian_GEO
+        weight: 1
+      - path: Chaplian_GEO/boltPistol_Low
+        weight: 1
+      - path: Chaplian_GEO/boltPistol_Low/boltPistol_Low_MeshPart0
+        weight: 1
+      - path: Chaplian_GEO/boltPistol_Low/boltPistol_Low_MeshPart1
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo1
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo5
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo6
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo7
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo8
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo9
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo56
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo62
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo63
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo64
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo65
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo66
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo67
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo68
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo69
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo70
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo75
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo78
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo79
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo81
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo82
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo83
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo84
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo85
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo88
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo89
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo90
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo91
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo92
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo93
+        weight: 1
+      - path: Chaplian_GEO/crozius:crozius
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: meleeCombo6
+      takeName: Take 001
+      firstFrame: 390
+      lastFrame: 412
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: back_root
+        weight: 1
+      - path: back_root/left_hip
+        weight: 1
+      - path: back_root/left_hip/left_knee
+        weight: 1
+      - path: back_root/left_hip/left_knee/left_ankle
+        weight: 1
+      - path: back_root/left_hip/left_knee/left_ankle/left_ball
+        weight: 1
+      - path: back_root/left_hip/left_knee/left_ankle/left_ball/left_toe
+        weight: 1
+      - path: back_root/pelvis
+        weight: 1
+      - path: back_root/pelvis/lower_back
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2/left_control_left_elbow
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2/left_control_left_elbow/left_control_wrist
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2/left_control_left_elbow/left_control_wrist/left_control_left_hand
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/neck
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/neck/crown
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2/right_control_right_elbow
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2/right_control_right_elbow/right_control_wrist
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2/right_control_right_elbow/right_control_wrist/right_control_right_hand
+        weight: 1
+      - path: back_root/pelvis1
+        weight: 1
+      - path: back_root/right_hip
+        weight: 1
+      - path: back_root/right_hip/right_knee
+        weight: 1
+      - path: back_root/right_hip/right_knee/right_ankle
+        weight: 1
+      - path: back_root/right_hip/right_knee/right_ankle/right_ball
+        weight: 1
+      - path: back_root/right_hip/right_knee/right_ankle/right_ball/right_toe
+        weight: 1
+      - path: Chaplian_GEO
+        weight: 1
+      - path: Chaplian_GEO/boltPistol_Low
+        weight: 1
+      - path: Chaplian_GEO/boltPistol_Low/boltPistol_Low_MeshPart0
+        weight: 1
+      - path: Chaplian_GEO/boltPistol_Low/boltPistol_Low_MeshPart1
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo1
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo5
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo6
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo7
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo8
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo9
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo56
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo62
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo63
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo64
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo65
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo66
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo67
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo68
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo69
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo70
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo75
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo78
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo79
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo81
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo82
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo83
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo84
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo85
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo88
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo89
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo90
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo91
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo92
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo93
+        weight: 1
+      - path: Chaplian_GEO/crozius:crozius
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: meleeCombo7
+      takeName: Take 001
+      firstFrame: 420
+      lastFrame: 442
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: back_root
+        weight: 1
+      - path: back_root/left_hip
+        weight: 1
+      - path: back_root/left_hip/left_knee
+        weight: 1
+      - path: back_root/left_hip/left_knee/left_ankle
+        weight: 1
+      - path: back_root/left_hip/left_knee/left_ankle/left_ball
+        weight: 1
+      - path: back_root/left_hip/left_knee/left_ankle/left_ball/left_toe
+        weight: 1
+      - path: back_root/pelvis
+        weight: 1
+      - path: back_root/pelvis/lower_back
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2/left_control_left_elbow
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2/left_control_left_elbow/left_control_wrist
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2/left_control_left_elbow/left_control_wrist/left_control_left_hand
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/neck
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/neck/crown
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2/right_control_right_elbow
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2/right_control_right_elbow/right_control_wrist
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2/right_control_right_elbow/right_control_wrist/right_control_right_hand
+        weight: 1
+      - path: back_root/pelvis1
+        weight: 1
+      - path: back_root/right_hip
+        weight: 1
+      - path: back_root/right_hip/right_knee
+        weight: 1
+      - path: back_root/right_hip/right_knee/right_ankle
+        weight: 1
+      - path: back_root/right_hip/right_knee/right_ankle/right_ball
+        weight: 1
+      - path: back_root/right_hip/right_knee/right_ankle/right_ball/right_toe
+        weight: 1
+      - path: Chaplian_GEO
+        weight: 1
+      - path: Chaplian_GEO/boltPistol_Low
+        weight: 1
+      - path: Chaplian_GEO/boltPistol_Low/boltPistol_Low_MeshPart0
+        weight: 1
+      - path: Chaplian_GEO/boltPistol_Low/boltPistol_Low_MeshPart1
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo1
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo5
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo6
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo7
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo8
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo9
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo56
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo62
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo63
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo64
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo65
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo66
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo67
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo68
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo69
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo70
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo75
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo78
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo79
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo81
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo82
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo83
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo84
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo85
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo88
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo89
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo90
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo91
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo92
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo93
+        weight: 1
+      - path: Chaplian_GEO/crozius:crozius
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: meleeCombo8
+      takeName: Take 001
+      firstFrame: 450
+      lastFrame: 472
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: back_root
+        weight: 1
+      - path: back_root/left_hip
+        weight: 1
+      - path: back_root/left_hip/left_knee
+        weight: 1
+      - path: back_root/left_hip/left_knee/left_ankle
+        weight: 1
+      - path: back_root/left_hip/left_knee/left_ankle/left_ball
+        weight: 1
+      - path: back_root/left_hip/left_knee/left_ankle/left_ball/left_toe
+        weight: 1
+      - path: back_root/pelvis
+        weight: 1
+      - path: back_root/pelvis/lower_back
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2/left_control_left_elbow
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2/left_control_left_elbow/left_control_wrist
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2/left_control_left_elbow/left_control_wrist/left_control_left_hand
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/neck
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/neck/crown
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2/right_control_right_elbow
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2/right_control_right_elbow/right_control_wrist
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2/right_control_right_elbow/right_control_wrist/right_control_right_hand
+        weight: 1
+      - path: back_root/pelvis1
+        weight: 1
+      - path: back_root/right_hip
+        weight: 1
+      - path: back_root/right_hip/right_knee
+        weight: 1
+      - path: back_root/right_hip/right_knee/right_ankle
+        weight: 1
+      - path: back_root/right_hip/right_knee/right_ankle/right_ball
+        weight: 1
+      - path: back_root/right_hip/right_knee/right_ankle/right_ball/right_toe
+        weight: 1
+      - path: Chaplian_GEO
+        weight: 1
+      - path: Chaplian_GEO/boltPistol_Low
+        weight: 1
+      - path: Chaplian_GEO/boltPistol_Low/boltPistol_Low_MeshPart0
+        weight: 1
+      - path: Chaplian_GEO/boltPistol_Low/boltPistol_Low_MeshPart1
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo1
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo5
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo6
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo7
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo8
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo9
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo56
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo62
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo63
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo64
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo65
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo66
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo67
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo68
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo69
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo70
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo75
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo78
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo79
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo81
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo82
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo83
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo84
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo85
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo88
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo89
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo90
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo91
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo92
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo93
+        weight: 1
+      - path: Chaplian_GEO/crozius:crozius
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: leftRun
+      takeName: Take 001
+      firstFrame: 480
+      lastFrame: 503
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: back_root
+        weight: 1
+      - path: back_root/left_hip
+        weight: 1
+      - path: back_root/left_hip/left_knee
+        weight: 1
+      - path: back_root/left_hip/left_knee/left_ankle
+        weight: 1
+      - path: back_root/left_hip/left_knee/left_ankle/left_ball
+        weight: 1
+      - path: back_root/left_hip/left_knee/left_ankle/left_ball/left_toe
+        weight: 1
+      - path: back_root/pelvis
+        weight: 1
+      - path: back_root/pelvis/lower_back
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2/left_control_left_elbow
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2/left_control_left_elbow/left_control_wrist
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/left_arm_root/left_control_left_shoulder2/left_control_left_elbow/left_control_wrist/left_control_left_hand
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/neck
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/neck/crown
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2/right_control_right_elbow
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2/right_control_right_elbow/right_control_wrist
+        weight: 1
+      - path: back_root/pelvis/lower_back/mid_bac/upper_back/right_arm_root/right_control_right_shoulder2/right_control_right_elbow/right_control_wrist/right_control_right_hand
+        weight: 1
+      - path: back_root/pelvis1
+        weight: 1
+      - path: back_root/right_hip
+        weight: 1
+      - path: back_root/right_hip/right_knee
+        weight: 1
+      - path: back_root/right_hip/right_knee/right_ankle
+        weight: 1
+      - path: back_root/right_hip/right_knee/right_ankle/right_ball
+        weight: 1
+      - path: back_root/right_hip/right_knee/right_ankle/right_ball/right_toe
+        weight: 1
+      - path: Chaplian_GEO
+        weight: 1
+      - path: Chaplian_GEO/boltPistol_Low
+        weight: 1
+      - path: Chaplian_GEO/boltPistol_Low/boltPistol_Low_MeshPart0
+        weight: 1
+      - path: Chaplian_GEO/boltPistol_Low/boltPistol_Low_MeshPart1
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo1
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo5
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo6
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo7
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo8
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo9
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo56
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo62
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo63
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo64
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo65
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo66
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo67
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo68
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo69
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo70
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo75
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo78
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo79
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo81
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo82
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo83
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo84
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo85
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo88
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo89
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo90
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo91
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo92
+        weight: 1
+      - path: Chaplian_GEO/chaplain_geo93
+        weight: 1
+      - path: Chaplian_GEO/crozius:crozius
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: rightRun
+      takeName: Take 001
+      firstFrame: 510
+      lastFrame: 533
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0

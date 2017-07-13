@@ -45,7 +45,7 @@ public class CharacterStats : MonoBehaviour {
         {
             if(!substractOnce)
             {
-                health -= 30;
+                health -= 10;
                 anim.SetTrigger("Hit");
                 substractOnce = true;
             }
@@ -65,9 +65,9 @@ public class CharacterStats : MonoBehaviour {
                 GetComponent<CapsuleCollider>().enabled = false;
                 GetComponent<Rigidbody>().isKinematic = true;
 
-                if(GetComponent<EnemyAI>())
+                if(GetComponent<EnemyMovementV002>())
                 {
-                    GetComponent<EnemyAI>().enabled = false;
+                    GetComponent<EnemyMovementV002>().enabled = false;
                     GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
 
                 }
@@ -75,7 +75,7 @@ public class CharacterStats : MonoBehaviour {
                 {
                     GetComponent<PlayerInput>().enabled = false;
                     GetComponent<PlayerMovement>().enabled = false;
-                    GetComponent<PlayerAttack>().enabled = false;
+                    GetComponent<PlayerAttackV3>().enabled = false;
                 }
 
                 dead = true;

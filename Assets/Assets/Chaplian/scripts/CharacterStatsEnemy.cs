@@ -41,7 +41,7 @@ public class CharacterStatsEnemy : MonoBehaviour {
         {
             if(!substractOnce)
             {
-                health -= 30;
+                health -= 15;
                 anim.SetTrigger("Hit");
                 substractOnce = true;
             }

@@ -11,6 +11,7 @@ public class PlayerAttack : MonoBehaviour {
 
     WaitForSeconds comboR;
     public GameObject damageCollider;
+    public GameObject damageCollider2;
 
     void Start ()
     {
@@ -21,6 +22,7 @@ public class PlayerAttack : MonoBehaviour {
         comboR = new WaitForSeconds(comboRate);
 
         damageCollider.SetActive(false);
+        damageCollider2.SetActive(false);
     }
 
     void FixedUpdate()
@@ -30,6 +32,15 @@ public class PlayerAttack : MonoBehaviour {
             anim.SetBool("Attack", true);
             plMovement.canMove = false;
             StartCoroutine("CloseAttack");
+        }
+        if (plInput.fire2)
+        {
+            anim.SetBool("Shoot", true);
+            plMovement.canMove = false;
+        }
+        else
+        {
+            anim.SetBool("Shoot", false);
         }
     }
 
@@ -42,11 +53,13 @@ public class PlayerAttack : MonoBehaviour {
     public void OpenDamageCollider()
     {
         damageCollider.SetActive(true);
+        damageCollider2.SetActive(true);
     }
 
     public void CloseDamageCollider()
     {
         damageCollider.SetActive(false);
+        damageCollider2.SetActive(false);
     }
 
 }
