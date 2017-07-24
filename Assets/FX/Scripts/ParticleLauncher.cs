@@ -5,24 +5,36 @@ using UnityEngine;
 public class ParticleLauncher : MonoBehaviour {
 
     public ParticleSystem particleLauncher;
-	public ParticleSystem splatterParticles;
+    public ParticleSystem splatterParticles;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    List<ParticleCollisionEvent> collisionEvents;
 
-	void OnParticleCollision(GameObject other)
-	{
-		EmitAtLocation ();
-	}
-
-    void EmitAtLocation()
+    // List variable initialization
+    void Start()
     {
-        splatterParticles.Emit(1);
+        collisionEvents = new List<ParticleCollisionEvent>();
+    }
+
+    //
+    void OnParticleCollision(GameObject other)
+    {
+        ParticlePhysicsExtensions.GetCollisionEvents (particleLauncher, other, collisionEvents);
+
+        for (int i = 0; i < collisionEvents.Count; i++)
+        {
+            EmitAtLocation(collisionEvents[i]);
+        }
+    }
+
+    // Gets Position & Rotation from CollisionEvent list then emits splatterparticles from there
+    void EmitAtLocation(ParticleCollisionEvent particleCollisionEvent)
+    {
+    splatterParticles.transform.position = particleCollisionEvent.intersection;
+    splatterParticles.transform.rotation = Quaternion.LookRotation(particleCollisionEvent.normal);
+    splatterParticles.Emit(1);
     }
 	
-	// Update is called once per frame
+	// emits projectile when fire button pushed
 	void Update ()
     {
         if (Input.GetButton("Fire2"))

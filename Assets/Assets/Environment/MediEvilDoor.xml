@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<catalog>
+	<Version app="modo" build="109580" xml_file_format="0">1001</Version>
+	<useRootPath>0</useRootPath>
+	<Material ID="Unity Material" ptag="Textured" type="unityShader">
+		<property name="Detail Normal" value="0.0"/>
+		<property name="Bump" value="0.0"/>
+		<property name="Normal" value="0.0">
+			<texture filename="F:\Working Files\Unity_Projects\WarHammerVR\AssetCreation\MODO\Assets\MedievilDoor_N.tga" name="MedievilDoor_N (Image)" uvindex="1" uvname="map2" wrapU="1.0" wrapV="1.0"/>
+		</property>
+		<property name="Specular" value="0.0"/>
+		<property name="Detail Normal Scale" value="1.0"/>
+		<property name="Detail Mask" value="0.0"/>
+		<property name="Base Color" value="0.0"/>
+		<property name="Fresnel Reflectance 0" value="0.04"/>
+		<property name="Emission" value="0.0, 0.0, 0.0"/>
+		<property name="Normal Scale" value="1.0"/>
+		<property name="Albedo" value="1.0, 1.0, 1.0">
+			<texture filename="F:\Working Files\Unity_Projects\WarHammerVR\AssetCreation\MODO\Assets\MedievilDoor_D.tga" name="MedievilDoor_D (Image)" uvindex="0" uvname="map1" wrapU="1.0" wrapV="1.0"/>
+			<texture filename="F:\Working Files\Unity_Projects\WarHammerVR\AssetCreation\MODO\Assets\MedievilDoor_AO.tga" name="MedievilDoor_AO (Image)" uvindex="1" uvname="map2" wrapU="1.0" wrapV="1.0"/>
+		</property>
+		<property name="Ambient Occlusion" value="0.0"/>
+		<property name="Opacity" value="1.0"/>
+		<property name="Smoothness" value="0.5">
+			<texture filename="F:\Working Files\Unity_Projects\WarHammerVR\AssetCreation\MODO\Assets\MedievilDoor_S.tga" name="MedievilDoor_S (Image)" uvindex="1" uvname="map2" wrapU="1.0" wrapV="1.0"/>
+			<texture filename="F:\Working Files\Unity_Projects\WarHammerVR\AssetCreation\MODO\Assets\MedievilDoor_AO.tga" name="MedievilDoor_AO (Image) (2)" uvindex="1" uvname="map2" wrapU="1.0" wrapV="1.0"/>
+		</property>
+		<property name="Detail Albedo x2" value="0.0"/>
+		<property name="Emissive Level" value="1.0"/>
+		<property name="Height Scale" value="0.02"/>
+		<property name="Metallic" value="0.0"/>
+		<property name="Roughness" value="0.0"/>
+	</Material>
+</catalog>
