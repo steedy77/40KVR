@@ -37,7 +37,7 @@ public class PlayerAttackV3 : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1") && comboIndex < comboParams.Length)
         {
-            plMovement.canMove = false;
+            //plMovement.canMove = false;
             Debug.Log(comboParams[comboIndex] + " triggered");
             animator.SetTrigger(comboParams[comboIndex]);
 

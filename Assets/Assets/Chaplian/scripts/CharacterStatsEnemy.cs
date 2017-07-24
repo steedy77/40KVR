@@ -13,13 +13,14 @@ public class CharacterStatsEnemy : MonoBehaviour {
     WaitForSeconds damageT;
 
     Animator anim;
+    GameManager gm;
 
     public GameObject sliderPrefab;
 
     Slider healthSlider;
     RectTransform healthTrans;
 
-    void Start ()
+    void Start()
     {
         damageT = new WaitForSeconds(damageTimer);
         anim = GetComponent<Animator>();
@@ -28,7 +29,10 @@ public class CharacterStatsEnemy : MonoBehaviour {
         slid.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform);
         healthSlider = slid.GetComponentInChildren<Slider>();
         healthTrans = slid.GetComponent<RectTransform>();
-    }
+   
+        gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+        }
+    
     
     void Update()
     {
@@ -41,7 +45,7 @@ public class CharacterStatsEnemy : MonoBehaviour {
         {
             if(!substractOnce)
             {
-                health -= 15;
+                health -= 10;
                 anim.SetTrigger("Hit");
                 substractOnce = true;
             }
@@ -54,24 +58,25 @@ public class CharacterStatsEnemy : MonoBehaviour {
             if (!dead)
             {
                 anim.SetBool("dead", true);
-                anim.CrossFade("deathChaos", 0.5f);
+                anim.CrossFade("death", 0.5f);
                 healthTrans.gameObject.SetActive(false);
                 dealDamage = true;
 
                 GetComponent<CapsuleCollider>().enabled = false;
                 GetComponent<Rigidbody>().isKinematic = true;
 
-                if(GetComponent<EnemyAI>())
+                if(GetComponent<EnemyMovementV002>()) 
                 {
-                    GetComponent<EnemyAI>().enabled = false;
+                    GetComponent<EnemyMovementV002>().enabled = false;
                     GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
 
                 }
+                
                 else
                 {
                     GetComponent<PlayerInput>().enabled = false;
-                    GetComponent<PlayerMovement>().enabled = false;
-                    GetComponent<PlayerAttack>().enabled = false;
+                    GetComponent<PlayerMovementV002>().enabled = false;
+                    GetComponent<PlayerAttackV3>().enabled = false;
                 }
 
                 dead = true;

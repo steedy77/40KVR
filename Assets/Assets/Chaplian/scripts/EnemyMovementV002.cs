@@ -68,7 +68,7 @@ public class EnemyMovementV002 : MonoBehaviour
         }
         else
         {
-            nav.Stop();
+            //nav.Stop();
             Vector3 relativePosition = transform.InverseTransformDirection(nav.desiredVelocity);
 
             float hor = relativePosition.z;
@@ -100,5 +100,20 @@ public class EnemyMovementV002 : MonoBehaviour
         // ... disable the nav mesh agent.
         //    nav.enabled = false;
         //}
+    }
+    IEnumerator CloseAttack()
+    {
+        yield return new WaitForSeconds(.4f);
+        anim.SetBool("Attack", false);
+    }
+
+    public void OpenDamageColllider()
+    {
+        damageCollider.SetActive(true);
+    }
+
+    public void CloseDamageCollider()
+    {
+        damageCollider.SetActive(false);
     }
 }
