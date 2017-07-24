@@ -65,16 +65,17 @@ public class CharacterStats : MonoBehaviour {
                 GetComponent<CapsuleCollider>().enabled = false;
                 GetComponent<Rigidbody>().isKinematic = true;
 
-                if(GetComponent<EnemyMovementV002>())
+                
+                if (GetComponent<bolterEnemyMovementV001>())
                 {
-                    GetComponent<EnemyMovementV002>().enabled = false;
+                    GetComponent<bolterEnemyMovementV001>().enabled = false;
                     GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
-
+                
                 }
                 else
                 {
                     GetComponent<PlayerInput>().enabled = false;
-                    GetComponent<PlayerMovement>().enabled = false;
+                    GetComponent<PlayerMovementV002>().enabled = false;
                     GetComponent<PlayerAttackV3>().enabled = false;
                 }
 
