@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class bolterEnemyMovementV001
-    : MonoBehaviour
+public class bolterEnemyMovementV001    : MonoBehaviour
 {
     Transform target;               // Reference to the player's position.
     //PlayerHealth playerHealth;      // Reference to the player's health.

@@ -46,9 +46,15 @@ public class PlayerMovementV002 : MonoBehaviour
         // Move the player to it's current position plus the movement.
         playerRigidbody.MovePosition(transform.position + movement);
 
-                
+
         //rotate the player
-        playerRigidbody.MoveRotation(Quaternion.LookRotation(movement));
+        if (h != 0f || v != 0f)
+        {
+
+            playerRigidbody.MoveRotation(Quaternion.LookRotation(movement));
+            Debug.Log(h +","+ v);
+        }
+          
         
     }
     

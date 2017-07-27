@@ -79,6 +79,8 @@ public class CharacterStatsEnemy : MonoBehaviour {
                     GetComponent<PlayerAttackV3>().enabled = false;
                 }
 
+                FindObjectOfType<GameManager>().enemiesSpawned.Remove(transform);
+
                 dead = true;
             }
         }

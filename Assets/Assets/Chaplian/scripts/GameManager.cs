@@ -44,7 +44,16 @@ public class GameManager : MonoBehaviour
         {
             holdPlayer = false;
         }
-
+        
+        if (enemiesSpawned.Count != 0 )
+        {
+            cameraMover.enabled = false;
+        }
+        else
+        {
+            cameraMover.enabled = true;
+        }
+        
         if (dead)
         {
             
